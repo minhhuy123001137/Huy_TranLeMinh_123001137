@@ -2,10 +2,10 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>TravelHi - Khám Phá & Trải Nghiệm Du Lịch Nhật Bản 2026</title>
-  <meta name="description" content="TravelHi - Cổng thông tin và tour du lịch Nhật Bản chuyên nghiệp. Trải nghiệm mùa hoa anh đào, núi Phú Sĩ, Tokyo phồn hoa, Kyoto cổ kính và ẩm thực xứ Phù Tang.">
-  <meta name="keywords" content="TravelHi, du lich nhat ban, tour nhat ban, tokyo, kyoto, osaka, fuji, hokkaido, visa nhat ban">
+  <meta name="description" content="TravelHi - Cổng thông tin và tour du lịch Nhật Bản chuyên nghiệp. Trải nghiệm mùa hoa anh đào, núi Phú Sĩ, Tokyo phồn hoa, Kyoto cổ kính và không gian 3D tương tác WebGL.">
+  <meta name="keywords" content="TravelHi, du lich nhat ban, tour nhat ban, tokyo, kyoto, osaka, fuji, hokkaido, kage 3d, webgl, threejs">
   <meta name="author" content="Trần Lê Minh Huy - MSSV: 123001137">
 
   <!-- Favicon -->
@@ -53,7 +53,8 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="#hero" class="nav-link active"><i class="fa-solid fa-house-chimney"></i> Trang Chủ</a></li>
           <li class="nav-item"><a href="#destinations" class="nav-link"><i class="fa-solid fa-map-location-dot"></i> Điểm Đến</a></li>
-          <li class="nav-item"><a href="#experiences" class="nav-link"><i class="fa-solid fa-torii-gate"></i> Trải Nghiệm</a></li>
+          <li class="nav-item"><a href="#kage-3d" class="nav-link nav-3d-link"><i class="fa-solid fa-cube"></i> Trải Nghiệm 3D</a></li>
+          <li class="nav-item"><a href="#experiences" class="nav-link"><i class="fa-solid fa-torii-gate"></i> Văn Hóa</a></li>
           <li class="nav-item"><a href="#cuisine" class="nav-link"><i class="fa-solid fa-bowl-rice"></i> Ẩm Thực</a></li>
           <li class="nav-item"><a href="#tours" class="nav-link"><i class="fa-solid fa-plane-departure"></i> Lịch Trình Tour</a></li>
           <li class="nav-item"><a href="#tips" class="nav-link"><i class="fa-solid fa-book-bookmark"></i> Cẩm Nang</a></li>
@@ -98,13 +99,16 @@
         <!-- Đoạn mô tả với Animate.css delay -->
         <p class="hero-desc animate__animated animate__fadeInUp animate__delay-1s">
           Hòa mình vào sắc hồng rực rỡ của hoa anh đào, chiêm ngưỡng núi Phú Sĩ tuyết phủ hùng vĩ,
-          lạc bước qua cổng Torii ngàn năm tại Kyoto và tận hưởng nền ẩm thực Washoku tinh hoa bậc nhất châu Á.
+          lạc bước qua cổng Torii ngàn năm tại Kyoto và bước vào không gian 3D tương tác sống động tái hiện núi chùa thanh tịnh.
         </p>
 
         <!-- CTA Buttons với Animate.css & hiệu ứng :hover, :focus tự viết bằng CSS -->
         <div class="hero-btns animate__animated animate__fadeInUp animate__delay-1s">
           <a href="#destinations" class="btn btn-primary btn-lg">
             <i class="fa-solid fa-compass"></i> Khám Phá Điểm Đến
+          </a>
+          <a href="#kage-3d" class="btn btn-3d-glow btn-lg">
+            <i class="fa-solid fa-cube"></i> Khám Phá 3D Kyoto (Kage)
           </a>
           <a href="#tours" class="btn btn-outline-light btn-lg">
             <i class="fa-solid fa-route"></i> Xem Tour Ưu Đãi 2026
@@ -245,6 +249,41 @@
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3D INTERACTIVE TEMPLE WALK (KAGE THREEUI) ================= -->
+    <section class="kage-section" id="kage-3d">
+      <div class="container">
+        
+        <header class="section-header text-center" data-aos="fade-up">
+          <div class="section-tag kage-header-tag">THREE.JS & WEBGL 3D WORLD • 影の道</div>
+          <h2 class="section-title kage-title">Không Gian 3D Tương Tác: Khám Phá Cố Đô Kyoto Huyền Ảo</h2>
+          <p class="section-description kage-desc">
+            Đắm mình vào chuyến dạo bước 5 chương qua các ngôi chùa cổ trên đỉnh núi Kyoto. Tận hưởng thế giới 3D WebGL sống động, ánh đèn lồng đá ấm áp, vầng trăng son và cổng Tam Môn uy nghiêm.
+          </p>
+        </header>
+
+        <!-- Khung nhúng trực tiếp không gian 3D WebGL (Three.js Kage Landing Page) -->
+        <div class="kage-frame-container" data-aos="zoom-in">
+          <iframe 
+            src="public/landing-pages/kage.html" 
+            class="kage-iframe" 
+            title="Kage — Where stillness reveals the unseen" 
+            loading="lazy" 
+            allow="accelerometer; gyroscope">
+          </iframe>
+        </div>
+
+        <div class="kage-controls-bar">
+          <span class="kage-note">
+            <i class="fa-solid fa-circle-info"></i> Bạn có thể cuộn trang hoặc di chuyển chuột bên trong khung để khám phá từng góc nhìn của ngôi chùa cổ.
+          </span>
+          <a href="public/landing-pages/kage.html" target="_blank" rel="noopener noreferrer" class="btn btn-3d-glow">
+            <i class="fa-solid fa-expand"></i> Mở Trải Nghiệm 3D Toàn Màn Hình
+          </a>
+        </div>
+
       </div>
     </section>
 
@@ -1004,12 +1043,12 @@
         <div class="footer-col">
           <h4 class="footer-col-title">Trải Nghiệm Văn Hóa</h4>
           <ul class="footer-links">
+            <li><a href="#kage-3d"><i class="fa-solid fa-cube"></i> Không Gian 3D Ngôi Chùa Kyoto (Kage)</a></li>
             <li><a href="#experiences"><i class="fa-solid fa-chevron-right"></i> Nghệ Thuật Trà Đạo Chado</a></li>
             <li><a href="#experiences"><i class="fa-solid fa-chevron-right"></i> Tắm Suối Nước Nóng Onsen</a></li>
             <li><a href="#experiences"><i class="fa-solid fa-chevron-right"></i> Trải Nghiệm Kimono Cổ Truyền</a></li>
             <li><a href="#cuisine"><i class="fa-solid fa-chevron-right"></i> Thưởng Thức Bò Wagyu A5</a></li>
             <li><a href="#tips"><i class="fa-solid fa-chevron-right"></i> Thủ Tục Xin Visa Nhật Bản</a></li>
-            <li><a href="#tips"><i class="fa-solid fa-chevron-right"></i> Bản Đồ Mua Sắm Miễn Thuế</a></li>
           </ul>
         </div>
 

@@ -3,6 +3,7 @@
    Sinh viên thực hiện: Trần Lê Minh Huy - MSSV: 123001137
    Học phần: Thiết Kế Web - Khoa CNTT Trường Đại học Lạc Hồng
    Kiến trúc: Pure HTML5 & CSS (Không sử dụng file JavaScript riêng biệt)
+   Tích hợp: ThreeUI Kage 3D Temple Experience (WebGL / Three.js)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -217,6 +218,26 @@ button, input, select, textarea {
   outline-offset: 3px;
 }
 
+/* Nút hiệu ứng 3D Kage Temple Glow */
+.btn-3d-glow {
+  background: linear-gradient(135deg, #e0231c 0%, #990000 100%);
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 25px rgba(224, 35, 28, 0.5);
+  animation: glowPulse 2.5s infinite;
+}
+
+.btn-3d-glow:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 35px rgba(224, 35, 28, 0.85);
+  color: #ffffff;
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 18px rgba(224, 35, 28, 0.4); }
+  50% { box-shadow: 0 0 32px rgba(224, 35, 28, 0.8); }
+}
+
 .btn-lg {
   padding: 15px 32px;
   font-size: 1.05rem;
@@ -373,6 +394,27 @@ button, input, select, textarea {
 
 .nav-link.active i {
   color: var(--primary-color);
+}
+
+/* Link điều hướng 3D nổi bật */
+.nav-3d-link {
+  color: #e0231c !important;
+  font-weight: 700 !important;
+  background: rgba(224, 35, 28, 0.08);
+  border: 1px solid rgba(224, 35, 28, 0.25);
+}
+
+.nav-3d-link i {
+  color: #e0231c !important;
+}
+
+.nav-3d-link:hover {
+  background: #e0231c !important;
+  color: #ffffff !important;
+}
+
+.nav-3d-link:hover i {
+  color: #ffffff !important;
 }
 
 /* Header Actions dùng Flexbox */
@@ -1019,7 +1061,74 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   10. SECTION TINH HOA ẨM THỰC (CSS GRID 4 CỘT)
+   10. SECTION 3D KYOTO TEMPLE EXPERIENCE (THREEUI KAGE INTEGRATION)
+   -------------------------------------------------------------------------- */
+.kage-section {
+  padding: 100px 0;
+  background: #05070a;
+  color: #dfe7e0;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(223, 231, 224, 0.1);
+  border-bottom: 1px solid rgba(223, 231, 224, 0.1);
+}
+
+.kage-header-tag {
+  color: #e0231c !important;
+  background: rgba(224, 35, 28, 0.12) !important;
+  border-color: rgba(224, 35, 28, 0.35) !important;
+}
+
+.kage-title {
+  color: #dfe7e0 !important;
+}
+
+.kage-desc {
+  color: #aab4ad !important;
+}
+
+.kage-frame-container {
+  position: relative;
+  width: 100%;
+  height: 680px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(223, 231, 224, 0.18);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85), 0 0 35px rgba(224, 35, 28, 0.25);
+  margin-top: 36px;
+  background: #05070a;
+}
+
+.kage-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.kage-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.kage-note {
+  font-size: 0.9rem;
+  color: #aab4ad;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kage-note i {
+  color: #e0231c;
+}
+
+/* --------------------------------------------------------------------------
+   11. SECTION TINH HOA ẨM THỰC (CSS GRID 4 CỘT)
    -------------------------------------------------------------------------- */
 .cuisine-section {
   padding: 100px 0;
@@ -1110,7 +1219,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   11. SECTION LỊCH TRÌNH TOUR GỢI Ý (CSS GRID 3 CỘT)
+   12. SECTION LỊCH TRÌNH TOUR GỢI Ý (CSS GRID 3 CỘT)
    -------------------------------------------------------------------------- */
 .tours-section {
   padding: 100px 0;
@@ -1271,7 +1380,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   12. SECTION CẨM NANG DU LỊCH & BLOG (CSS GRID 3 CỘT)
+   13. SECTION CẨM NANG DU LỊCH & BLOG (CSS GRID 3 CỘT)
    -------------------------------------------------------------------------- */
 .tips-section {
   padding: 100px 0;
@@ -1386,7 +1495,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   13. SECTION ĐÁNH GIÁ CỦA KHÁCH HÀNG (CSS GRID 3 CỘT)
+   14. SECTION ĐÁNH GIÁ CỦA KHÁCH HÀNG (CSS GRID 3 CỘT)
    -------------------------------------------------------------------------- */
 .testimonials-section {
   padding: 100px 0;
@@ -1463,7 +1572,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   14. SECTION LIÊN HỆ & FORM ĐĂNG KÝ (CSS GRID & ASIDE)
+   15. SECTION LIÊN HỆ & FORM ĐĂNG KÝ (CSS GRID & ASIDE)
    -------------------------------------------------------------------------- */
 .contact-section {
   padding: 100px 0;
@@ -1672,7 +1781,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   15. FOOTER CHUẨN SEMANTIC HTML5 (CSS GRID 4 CỘT)
+   16. FOOTER CHUẨN SEMANTIC HTML5 (CSS GRID 4 CỘT)
    -------------------------------------------------------------------------- */
 .site-footer {
   background-color: var(--bg-dark);
@@ -1844,7 +1953,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   16. FLOATING WIDGETS & BACK TO TOP (PURE CSS)
+   17. FLOATING WIDGETS & BACK TO TOP (PURE CSS)
    -------------------------------------------------------------------------- */
 .floating-widget-group {
   position: fixed;
@@ -1891,7 +2000,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   17. RESPONSIVE MEDIA QUERIES (FLEXBOX & GRID ADAPTATION)
+   18. RESPONSIVE MEDIA QUERIES (FLEXBOX & GRID ADAPTATION)
    -------------------------------------------------------------------------- */
 @media (max-width: 1100px) {
   .hero-title {
@@ -1909,6 +2018,9 @@ button, input, select, textarea {
   }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .kage-frame-container {
+    height: 560px;
   }
 }
 
@@ -2001,6 +2113,10 @@ button, input, select, textarea {
   .search-form {
     grid-template-columns: 1fr 1fr;
   }
+
+  .kage-frame-container {
+    height: 480px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -2057,5 +2173,14 @@ button, input, select, textarea {
 
   .btn-cta-header {
     display: none;
+  }
+
+  .kage-frame-container {
+    height: 380px;
+  }
+
+  .kage-controls-bar {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
