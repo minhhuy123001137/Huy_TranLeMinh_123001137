@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="100%">
+  <defs>
+    <linearGradient id="japanRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e63946" />
+      <stop offset="100%" stop-color="#bc002d" />
+    </linearGradient>
+    <linearGradient id="goldSun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb703" />
+      <stop offset="100%" stop-color="#fb8500" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Mount Fuji & Rising Sun Icon -->
+  <g transform="translate(10, 8)">
+    <!-- Red/Orange Sun -->
+    <circle cx="32" cy="32" r="28" fill="url(#japanRed)" opacity="0.95" />
+    <circle cx="32" cy="32" r="30" stroke="#fbc3bc" stroke-width="1.5" fill="none" opacity="0.6" stroke-dasharray="3 3"/>
+    
+    <!-- Mount Fuji Silhouette -->
+    <path d="M 12 52 L 26 24 L 38 24 L 52 52 Z" fill="#ffffff" />
+    <!-- Snow peak division -->
+    <path d="M 23 30 L 26 24 L 38 24 L 41 30 L 37 32 L 35 29 L 32 33 L 29 29 L 27 32 Z" fill="#e2e8f0" />
+    
+    <!-- Torii Gate Accent -->
+    <path d="M 24 52 L 24 43 M 40 43 L 40 52 M 20 45 L 44 45 M 22 42 Q 32 39 42 42" stroke="#bc002d" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Typography -->
+  <text x="82" y="44" font-family="'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="34" letter-spacing="-0.5" fill="#1a1a24">
+    Travel<tspan fill="#bc002d">Hi</tspan>
+  </text>
+  
+  <!-- Japanese Sub-label & Slogan -->
+  <text x="84" y="60" font-family="'Noto Sans JP', 'Segoe UI', system-ui, sans-serif" font-weight="700" font-size="10.5" letter-spacing="3" fill="#64748b">
+    トラベル・ハイ  <tspan fill="#bc002d" font-weight="800">•</tspan> JAPAN DISCOVERY
+  </text>
+</svg>

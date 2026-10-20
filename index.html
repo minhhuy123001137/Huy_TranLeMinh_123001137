@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelHi - Khám Phá & Trải Nghiệm Du Lịch Nhật Bản 2026</title>
+  <meta name="description" content="TravelHi - Cổng thông tin và tour du lịch Nhật Bản chuyên nghiệp. Trải nghiệm mùa hoa anh đào, núi Phú Sĩ, Tokyo phồn hoa, Kyoto cổ kính và ẩm thực xứ Phù Tang.">
+  <meta name="keywords" content="TravelHi, du lich nhat ban, tour nhat ban, tokyo, kyoto, osaka, fuji, hokkaido, visa nhat ban">
+  <meta name="author" content="Trần Lê Minh Huy - MSSV: 123001137">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Animate.css CDN (Đạt chuẩn yêu cầu đề bài) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- AOS (Animate On Scroll) CSS (Đạt chuẩn yêu cầu đề bài) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER CHUẨN SEMANTIC HTML5 ================= -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <!-- Logo thương hiệu -->
+      <a href="#hero" class="brand-logo" aria-label="Trang chủ TravelHi">
+        <img src="assets/images/logo.svg" alt="TravelHi Logo - Khám phá Nhật Bản" class="logo-img">
+      </a>
+
+      <!-- Thanh điều hướng chính (nav) -->
+      <nav class="site-nav" id="mainNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active"><i class="fa-solid fa-house-chimney"></i> Trang Chủ</a></li>
+          <li class="nav-item"><a href="#destinations" class="nav-link"><i class="fa-solid fa-map-location-dot"></i> Điểm Đến</a></li>
+          <li class="nav-item"><a href="#experiences" class="nav-link"><i class="fa-solid fa-torii-gate"></i> Trải Nghiệm</a></li>
+          <li class="nav-item"><a href="#cuisine" class="nav-link"><i class="fa-solid fa-bowl-rice"></i> Ẩm Thực</a></li>
+          <li class="nav-item"><a href="#tours" class="nav-link"><i class="fa-solid fa-plane-departure"></i> Lịch Trình Tour</a></li>
+          <li class="nav-item"><a href="#tips" class="nav-link"><i class="fa-solid fa-book-bookmark"></i> Cẩm Nang</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-phone"></i> Liên Hệ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hành động bổ trợ trên header -->
+      <div class="header-actions">
+        <a href="tel:19008888" class="hotline-pill" title="Gọi tư vấn miễn phí">
+          <i class="fa-solid fa-headset pulse-icon"></i>
+          <span class="hotline-text"><strong>1900 8888</strong><small>Hỗ trợ 24/7</small></span>
+        </a>
+        <button class="btn btn-primary btn-cta-header open-modal-btn" data-tour="Tư vấn hành trình Nhật Bản 2026">
+          <i class="fa-regular fa-paper-plane"></i> Đặt Chuyến Đi
+        </button>
+
+        <!-- Nút toggle mobile menu -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Mở menu điều hướng" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT CHUẨN SEMANTIC HTML5 ================= -->
+  <main id="main-content">
+
+    <!-- HERO SECTION VỚI ANIMATE.CSS -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-content">
+        <!-- Badge với Animate.css -->
+        <div class="hero-badge animate__animated animate__fadeInDown">
+          <span class="flag-icon">🇯🇵</span>
+          <span>Chuyến Đi Trong Mơ Đến Xứ Sở Hoa Anh Đào</span>
+        </div>
+
+        <!-- Tiêu đề lớn với Animate.css -->
+        <h1 class="hero-title animate__animated animate__fadeInUp">
+          Khám Phá Vẻ Đẹp Kỳ Diệu Của <span class="highlight-text">Nhật Bản</span> Cùng TravelHi
+        </h1>
+
+        <p class="hero-desc animate__animated animate__fadeInUp animate__delay-1s">
+          Hòa mình vào sắc hồng rực rỡ của hoa anh đào, chiêm ngưỡng núi Phú Sĩ tuyết phủ hùng vĩ,
+          lạc bước qua cổng Torii ngàn năm tại Kyoto và tận hưởng nền ẩm thực tinh hoa bậc nhất châu Á.
+        </p>
+
+        <!-- CTA Buttons với Animate.css & :hover tự viết -->
+        <div class="hero-btns animate__animated animate__fadeInUp animate__delay-1s">
+          <a href="#destinations" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-compass"></i> Khám Phá Điểm Đến
+          </a>
+          <a href="#tours" class="btn btn-outline-light btn-lg">
+            <i class="fa-solid fa-route"></i> Xem Tour Ưu Đãi 2026
+          </a>
+        </div>
+
+        <!-- Bảng tìm kiếm nhanh (Quick Search Box) -->
+        <div class="hero-search-card" data-aos="zoom-in" data-aos-delay="300">
+          <form class="search-form" id="quickSearchForm" onsubmit="event.preventDefault(); handleQuickSearch();">
+            <div class="form-group-item">
+              <label for="searchDest"><i class="fa-solid fa-location-dot"></i> Điểm Đến</label>
+              <select id="searchDest" class="form-control">
+                <option value="all">Tất cả điểm đến</option>
+                <option value="tokyo">Tokyo - Thủ đô hiện đại</option>
+                <option value="kyoto">Kyoto - Cố đô di sản</option>
+                <option value="osaka">Osaka - Thiên đường ẩm thực</option>
+                <option value="fuji">Núi Phú Sĩ & Ngũ Hồ</option>
+                <option value="hokkaido">Hokkaido - Miền tuyết trắng</option>
+                <option value="nara">Nara - Vương quốc hươu thần</option>
+              </select>
+            </div>
+
+            <div class="form-group-item">
+              <label for="searchSeason"><i class="fa-solid fa-cloud-sun"></i> Mùa Du Lịch</label>
+              <select id="searchSeason" class="form-control">
+                <option value="all">Bốn mùa quanh năm</option>
+                <option value="spring">Mùa Xuân (Hoa Anh Đào Sakura)</option>
+                <option value="summer">Mùa Hạ (Lễ hội Hanabi & Phú Sĩ)</option>
+                <option value="autumn">Mùa Thu (Rực rỡ lá đỏ Momiji)</option>
+                <option value="winter">Mùa Đông (Tuyết trắng & Suối Onsen)</option>
+              </select>
+            </div>
+
+            <div class="form-group-item">
+              <label for="searchBudget"><i class="fa-solid fa-wallet"></i> Ngân Sách Dự Kiến</label>
+              <select id="searchBudget" class="form-control">
+                <option value="all">Mọi mức ngân sách</option>
+                <option value="economy">Tiết kiệm (Dưới 20 triệu)</option>
+                <option value="standard">Tiêu chuẩn (20 - 30 triệu)</option>
+                <option value="premium">Cao cấp VIP (Trên 30 triệu)</option>
+              </select>
+            </div>
+
+            <div class="form-group-item search-btn-wrap">
+              <button type="submit" class="btn btn-primary btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Tìm Kiếm
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Thống kê nổi bật (Hero Stats) -->
+        <div class="hero-stats-grid" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-item">
+            <span class="stat-number">47+</span>
+            <span class="stat-label">Tỉnh Thành Khám Phá</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Mùa Thiên Nhiên Kỳ Vĩ</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">99.8%</span>
+            <span class="stat-label">Du Khách Hài Lòng</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Năm Kinh Nghiệm Tour</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION GIỚI THIỆU & GIÁ TRỊ VƯỢT TRỘI CỦA TRAVELHI -->
+    <section class="intro-section" id="intro">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-text" data-aos="fade-right">
+            <div class="section-tag">VỀ TRAVELHI • 日本の旅</div>
+            <h2 class="section-title">Hành Trình Khám Phá Đất Nước Mặt Trời Mọc Hoàn Hảo</h2>
+            <p class="section-description">
+              <strong>TravelHi</strong> tự hào là người bạn đồng hành tin cậy trên từng cung đường xứ sở Phù Tang. Chúng tôi mang đến những trải nghiệm du lịch Nhật Bản chân thực, đậm đà bản sắc văn hóa từ trà đạo tinh tế, tắm onsen cổ truyền đến sự sầm uất công nghệ của thủ đô Tokyo.
+            </p>
+            <div class="features-checklist">
+              <div class="check-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Hỗ Trợ Thủ Tục Visa Tỷ Lệ Đậu 99%</h4>
+                  <p>Hồ sơ đơn giản, tư vấn tận tâm và bảo lãnh uy tín từ đối tác du lịch Nhật Bản.</p>
+                </div>
+              </div>
+              <div class="check-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Hướng Dẫn Viên Chuyên Sâu Ngôn Ngữ & Văn Hóa</h4>
+                  <p>Đội ngũ HDV thông thạo tiếng Nhật, am hiểu từng ngõ ngách, truyền tải trọn vẹn văn hóa.</p>
+                </div>
+              </div>
+              <div class="check-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Dịch Vụ Khách Sạn & Ẩm Thực Chọn Lọc</h4>
+                  <p>Nghỉ dưỡng chuẩn 4-5 sao, trải nghiệm Ryokan truyền thống và thưởng thức bò Wagyu trứ danh.</p>
+                </div>
+              </div>
+            </div>
+            <div class="intro-action">
+              <button class="btn btn-primary open-modal-btn" data-tour="Tư vấn hồ sơ Visa & Lịch trình du lịch">
+                <i class="fa-solid fa-calendar-check"></i> Nhận Tư Vấn Miễn Phí
+              </button>
+            </div>
+          </div>
+
+          <div class="intro-visual" data-aos="fade-left">
+            <figure class="visual-stack">
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1000&auto=format&fit=crop" alt="Núi Phú Sĩ và chùa Chureito Pagoda" class="main-img img-rounded shadow-lg">
+              <div class="floating-badge badge-top">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                  <strong>Top 1 Thương Hiệu</strong>
+                  <small>Chuyên Tour Nhật Bản</small>
+                </div>
+              </div>
+              <div class="floating-badge badge-bottom">
+                <i class="fa-solid fa-shield-heart"></i>
+                <div>
+                  <strong>Bảo Hiểm Du Lịch 1 Tỷ</strong>
+                  <small>An tâm trọn vẹn mỗi hành trình</small>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION ĐIỂM ĐẾN NỔI BẬT (FEATURED DESTINATIONS) -->
+    <section class="destinations-section" id="destinations">
+      <div class="container">
+        <header class="section-header text-center" data-aos="fade-up">
+          <div class="section-tag">ĐIỂM ĐẾN KHÔNG THỂ BỎ LỠ</div>
+          <h2 class="section-title">Thiên Đường Cảnh Sắc Bốn Mùa Xứ Phù Tang</h2>
+          <p class="section-description">
+            Từ những đô thị ánh sáng hiện đại bậc nhất thế giới đến các ngôi chùa cổ kính ẩn mình giữa rừng thông xanh mướt.
+          </p>
+
+          <!-- Filter Navigation Tabs -->
+          <div class="filter-tab-bar" role="tablist">
+            <button class="filter-btn active" data-filter="all">Tất Cả Điểm Đến</button>
+            <button class="filter-btn" data-filter="kanto">Tokyo & Vùng Kanto</button>
+            <button class="filter-btn" data-filter="kansai">Kyoto & Kansai</button>
+            <button class="filter-btn" data-filter="hokkaido">Hokkaido Xứ Tuyết</button>
+            <button class="filter-btn" data-filter="fuji">Núi Phú Sĩ & Ngũ Hồ</button>
+          </div>
+        </header>
+
+        <!-- Grid Điểm Đến sử dụng thẻ <article> chuẩn Semantic -->
+        <div class="destinations-grid">
+
+          <!-- Destination 1: Tokyo -->
+          <article class="destination-card" data-category="kanto" data-aos="fade-up" data-aos-delay="100">
+            <figure class="card-media">
+              <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=900&auto=format&fit=crop" alt="Thủ đô Tokyo và Tháp Tokyo lung linh về đêm">
+              <span class="card-badge badge-hot"><i class="fa-solid fa-fire"></i> Sôi Động Nhất</span>
+              <span class="price-tag">Từ 18.990.000₫</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Vùng Kanto, Nhật Bản</span>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.9 (1.850)</span>
+              </div>
+              <h3 class="card-title">Tokyo - Kinh Đô Ánh Sáng & Tương Lai</h3>
+              <p class="card-text">
+                Ngắm nhìn ngã tư Shibuya huyền thoại, phố điện tử Akihabara rực rỡ, đền Asakusa Sensoji thanh tịnh và mua sắm thả ga tại Ginza sang trọng.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Shibuya</span>
+                <span class="tag">Asakusa</span>
+                <span class="tag">Skytree</span>
+                <span class="tag">Akihabara</span>
+              </div>
+              <div class="card-footer">
+                <span class="tour-duration"><i class="fa-regular fa-clock"></i> 5 Ngày 4 Đêm</span>
+                <button class="btn btn-sm btn-primary open-modal-btn" data-tour="Tour Khám Phá Tokyo Hiện Đại">Đặt Ngay</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Destination 2: Kyoto -->
+          <article class="destination-card" data-category="kansai" data-aos="fade-up" data-aos-delay="200">
+            <figure class="card-media">
+              <img src="https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?q=80&w=900&auto=format&fit=crop" alt="Cổng Torii đền Fushimi Inari tại Kyoto">
+              <span class="card-badge badge-culture"><i class="fa-solid fa-landmark"></i> Cố Đô Ngàn Năm</span>
+              <span class="price-tag">Từ 21.500.000₫</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Vùng Kansai, Nhật Bản</span>
+                <span class="rating"><i class="fa-solid fa-star"></i> 5.0 (2.420)</span>
+              </div>
+              <h3 class="card-title">Kyoto - Trầm Mặc & Di Sản Văn Hóa</h3>
+              <p class="card-text">
+                Bước qua vạn cánh cổng Torii son đỏ ở Fushimi Inari, lắng nghe tiếng gió qua rừng trúc Arashiyama và ngắm bóng vàng rực của chùa Chùa Vàng Kinkaku-ji.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Fushimi Inari</span>
+                <span class="tag">Rừng Trúc</span>
+                <span class="tag">Chùa Vàng</span>
+                <span class="tag">Phố Gion</span>
+              </div>
+              <div class="card-footer">
+                <span class="tour-duration"><i class="fa-regular fa-clock"></i> 6 Ngày 5 Đêm</span>
+                <button class="btn btn-sm btn-primary open-modal-btn" data-tour="Tour Di Sản Cố Đô Kyoto">Đặt Ngay</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Destination 3: Osaka -->
+          <article class="destination-card" data-category="kansai" data-aos="fade-up" data-aos-delay="300">
+            <figure class="card-media">
+              <img src="https://images.unsplash.com/photo-1590559899731-a3f376dd4557?q=80&w=900&auto=format&fit=crop" alt="Lâu đài Osaka mùa hoa anh đào">
+              <span class="card-badge badge-food"><i class="fa-solid fa-utensils"></i> Bếp Ăn Nhật Bản</span>
+              <span class="price-tag">Từ 19.800.000₫</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Vùng Kansai, Nhật Bản</span>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.9 (1.200)</span>
+              </div>
+              <h3 class="card-title">Osaka - Vương Quốc Ẩm Thực Đường Phố</h3>
+              <p class="card-text">
+                Check-in biển hiệu Glico Man tại Dotonbori, nếm thử bánh Takoyaki nóng hổi, ghé thăm Lâu đài Osaka kiêu hùng và quẩy hết mình tại Universal Studios.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Dotonbori</span>
+                <span class="tag">Lâu Đài Osaka</span>
+                <span class="tag">Takoyaki</span>
+                <span class="tag">USJ</span>
+              </div>
+              <div class="card-footer">
+                <span class="tour-duration"><i class="fa-regular fa-clock"></i> 5 Ngày 4 Đêm</span>
+                <button class="btn btn-sm btn-primary open-modal-btn" data-tour="Tour Khám Phá Osaka & USJ">Đặt Ngay</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Destination 4: Núi Phú Sĩ & Kawaguchiko -->
+          <article class="destination-card" data-category="fuji" data-aos="fade-up" data-aos-delay="100">
+            <figure class="card-media">
+              <img src="https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=900&auto=format&fit=crop" alt="Núi Phú Sĩ phản chiếu trên mặt hồ Kawaguchiko">
+              <span class="card-badge badge-iconic"><i class="fa-solid fa-mountain-sun"></i> Biểu Tượng Quốc Gia</span>
+              <span class="price-tag">Từ 17.500.000₫</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Yamanashi & Shizuoka</span>
+                <span class="rating"><i class="fa-solid fa-star"></i> 5.0 (3.100)</span>
+              </div>
+              <h3 class="card-title">Núi Phú Sĩ & Làng Cổ Oshino Hakkai</h3>
+              <p class="card-text">
+                Chiêm ngưỡng đỉnh núi thiêng tuyết phủ quanh năm, đạp xe quanh hồ Kawaguchiko yên bình và thưởng thức dòng nước tan từ băng tuyết tinh khiết tại làng cổ.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Hồ Kawaguchi</span>
+                <span class="tag">Oshino Hakkai</span>
+                <span class="tag">Chùa Chureito</span>
+                <span class="tag">Cáp Treo Kachi</span>
+              </div>
+              <div class="card-footer">
+                <span class="tour-duration"><i class="fa-regular fa-clock"></i> 4 Ngày 3 Đêm</span>
+                <button class="btn btn-sm btn-primary open-modal-btn" data-tour="Tour Thưởng Ngoạn Núi Phú Sĩ">Đặt Ngay</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Destination 5: Hokkaido -->
+          <article class="destination-card" data-category="hokkaido" data-aos="fade-up" data-aos-delay="200">
+            <figure class="card-media">
+              <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=900&auto=format&fit=crop" alt="Hokkaido tuyết phủ mùa đông lãng mạn">
+              <span class="card-badge badge-winter"><i class="fa-solid fa-snowflake"></i> Thiên Đường Tuyết</span>
+              <span class="price-tag">Từ 26.900.000₫</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Bắc Đảo Hokkaido, Nhật Bản</span>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.9 (950)</span>
+              </div>
+              <h3 class="card-title">Hokkaido - Kênh Đào Otaru & Hoa Oải Hương</h3>
+              <p class="card-text">
+                Mùa đông đắm chìm trong tuyết xốp mịn màng và lễ hội băng đăng Sapporo; mùa hè ngập tràn sắc tím đồng hoa lavender Furano và hải sản cua hoàng đế tươi ngon.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Sapporo</span>
+                <span class="tag">Otaru Canal</span>
+                <span class="tag">Đồi Hoa Furano</span>
+                <span class="tag">Cua King Crab</span>
+              </div>
+              <div class="card-footer">
+                <span class="tour-duration"><i class="fa-regular fa-clock"></i> 6 Ngày 5 Đêm</span>
+                <button class="btn btn-sm btn-primary open-modal-btn" data-tour="Tour Hokkaido Tuyết Trắng Lãng Mạn">Đặt Ngay</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Destination 6: Nara -->
+          <article class="destination-card" data-category="kansai" data-aos="fade-up" data-aos-delay="300">
+            <figure class="card-media">
+              <img src="https://images.unsplash.com/photo-1528164344705-475426879c0d?q=80&w=900&auto=format&fit=crop" alt="Chú hươu Nara cúi chào du khách">
+              <span class="card-badge badge-nature"><i class="fa-solid fa-leaf"></i> Sứ Giả Thần Linh</span>
+              <span class="price-tag">Từ 16.500.000₫</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Tỉnh Nara, Nhật Bản</span>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.8 (820)</span>
+              </div>
+              <h3 class="card-title">Nara - Vương Quốc Hươu & Đại Phật Todaiji</h3>
+              <p class="card-text">
+                Dạo bước giữa hàng ngàn chú hươu sika thân thiện biết cúi đầu chào xin bánh senbei, chiêm bái pho tượng Phật bằng đồng khổng lồ tại ngôi chùa gỗ Todai-ji cổ xưa.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Công Viên Nara</span>
+                <span class="tag">Chùa Todaiji</span>
+                <span class="tag">Hươu Sika</span>
+                <span class="tag">Đền Kasuga</span>
+              </div>
+              <div class="card-footer">
+                <span class="tour-duration"><i class="fa-regular fa-clock"></i> 4 Ngày 3 Đêm</span>
+                <button class="btn btn-sm btn-primary open-modal-btn" data-tour="Tour Khám Phá Cố Đô Nara">Đặt Ngay</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TRẢI NGHIỆM VĂN HÓA ĐẶC SẮC (CULTURAL EXPERIENCES) -->
+    <section class="experiences-section" id="experiences">
+      <div class="container">
+        <header class="section-header text-center" data-aos="fade-up">
+          <div class="section-tag">TINH HOA VĂN HÓA PHÙ TANG</div>
+          <h2 class="section-title">Những Trải Nghiệm Độc Bản Chỉ Có Tại Nhật Bản</h2>
+          <p class="section-description">
+            Không chỉ là ngắm cảnh, TravelHi mang đến cho bạn cơ hội hòa mình vào triết lý sống và văn hóa tinh tế của người Nhật.
+          </p>
+        </header>
+
+        <div class="experiences-grid">
+
+          <article class="exp-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="exp-icon-wrap">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <div class="exp-content">
+              <h3>Trà Đạo Chado (Chano-yu)</h3>
+              <p>Khám phá nghệ thuật thưởng thức trà xanh matcha, trải nghiệm triết lý Hòa - Kính - Thanh - Tịch trong căn phòng trà tatami truyền thống.</p>
+            </div>
+          </article>
+
+          <article class="exp-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="exp-icon-wrap">
+              <i class="fa-solid fa-hot-tub-person"></i>
+            </div>
+            <div class="exp-content">
+              <h3>Tắm Suối Nước Nóng Onsen</h3>
+              <p>Ngâm mình trong dòng khoáng nóng tự nhiên giữa cảnh sắc núi tuyết, phục hồi sức khỏe và thưởng thức bữa tiệc Kaiseki tại Ryokan cổ điển.</p>
+            </div>
+          </article>
+
+          <article class="exp-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="exp-icon-wrap">
+              <i class="fa-solid fa-person-dress"></i>
+            </div>
+            <div class="exp-content">
+              <h3>Khoác Áo Kimono & Yukata</h3>
+              <p>Hóa thân thành những thiếu nữ và chàng trai Nhật Bản trong bộ trang phục truyền thống tinh xảo, dạo bước chụp ảnh tại phố cổ Kyoto.</p>
+            </div>
+          </article>
+
+          <article class="exp-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="exp-icon-wrap">
+              <i class="fa-solid fa-train-subway"></i>
+            </div>
+            <div class="exp-content">
+              <h3>Tàu Siêu Tốc Shinkansen</h3>
+              <p>Trải nghiệm tàu hình viên đạn Shinkansen lướt với vận tốc hơn 300km/h, an toàn tuyệt đối và ngắm nhìn núi Phú Sĩ qua ô cửa sổ.</p>
+            </div>
+          </article>
+
+          <article class="exp-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="exp-icon-wrap">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <div class="exp-content">
+              <h3>Lễ Hội Pháo Hoa & Matsuri</h3>
+              <p>Hòa cùng dòng người diện Yukata cầm quạt giấy dự lễ hội mùa hè Hanabi Matsuri rực rỡ, ăn bánh bạch tuộc và múa điệu Bon Odori.</p>
+            </div>
+          </article>
+
+          <article class="exp-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="exp-icon-wrap">
+              <i class="fa-solid fa-mountain"></i>
+            </div>
+            <div class="exp-content">
+              <h3>Thiền Định Tại Chùa Cổ (Shukubo)</h3>
+              <p>Nghỉ lại tại các ngôi chùa trên đỉnh Koyasan linh thiêng, thức dậy cùng tiếng chuông mai và nếm thử nghệ thuật ẩm thực chay Shojin Ryori.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TINH HOA ẨM THỰC NHẬT BẢN (JAPANESE CUISINE) -->
+    <section class="cuisine-section" id="cuisine">
+      <div class="container">
+        <header class="section-header text-center" data-aos="fade-up">
+          <div class="section-tag">WASHOKU • DI SẢN PHI VẬT THỂ UNESCO</div>
+          <h2 class="section-title">Mỹ Vị Ẩm Thực Tinh Tế Của Xứ Sở Hoa Anh Đào</h2>
+          <p class="section-description">
+            Mỗi món ăn là một tác phẩm nghệ thuật cân bằng giữa hương vị tự nhiên thuần khiết và cách bài trí tôn vinh bốn mùa.
+          </p>
+        </header>
+
+        <div class="cuisine-showcase">
+          <!-- Item 1: Sushi & Sashimi -->
+          <article class="cuisine-card" data-aos="fade-up" data-aos-delay="100">
+            <figure class="cuisine-img-box">
+              <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=900&auto=format&fit=crop" alt="Sushi cá hồi và cá ngừ tươi ngon tại Tokyo">
+            </figure>
+            <div class="cuisine-info">
+              <span class="cuisine-category">Hải sản tươi sống</span>
+              <h3 class="cuisine-title">Sushi & Sashimi Omakase</h3>
+              <p class="cuisine-desc">Những lát cá ngừ Otoro, cá hồi Nauy, nhím biển Uni tươi roi rói được bàn tay nghệ nhân bậc thầy Nigiri nắn nót tỉ mỉ.</p>
+              <span class="taste-badge"><i class="fa-solid fa-certificate"></i> Đạt sao Michelin</span>
+            </div>
+          </article>
+
+          <!-- Item 2: Wagyu A5 -->
+          <article class="cuisine-card" data-aos="fade-up" data-aos-delay="200">
+            <figure class="cuisine-img-box">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=900&auto=format&fit=crop" alt="Bò Wagyu A5 nướng than hoa">
+            </figure>
+            <div class="cuisine-info">
+              <span class="cuisine-category">Đặc sản trứ danh</span>
+              <h3 class="cuisine-title">Bò Wagyu A5 & Thịt Bò Kobe</h3>
+              <p class="cuisine-desc">Thớ thịt vân cẩm thạch hoàn mỹ, nướng xèo xèo trên bàn Teppanyaki nóng hổi, mềm tan ngay đầu lưỡi như một giấc mơ.</p>
+              <span class="taste-badge"><i class="fa-solid fa-crown"></i> Cực phẩm hảo hạng</span>
+            </div>
+          </article>
+
+          <!-- Item 3: Ramen -->
+          <article class="cuisine-card" data-aos="fade-up" data-aos-delay="300">
+            <figure class="cuisine-img-box">
+              <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=900&auto=format&fit=crop" alt="Bát mì Ramen Tonkotsu thơm lừng">
+            </figure>
+            <div class="cuisine-info">
+              <span class="cuisine-category">Quốc hồn quốc túy</span>
+              <h3 class="cuisine-title">Mì Ramen Tonkotsu & Miso</h3>
+              <p class="cuisine-desc">Nước dùng xương hầm liên tục 18 tiếng sánh mịn, sợi mì thủ công dai vàng óng ả cùng thịt xá xíu Chashu và trứng lòng đào Ajitsuke.</p>
+              <span class="taste-badge"><i class="fa-solid fa-heart"></i> Món ăn được yêu thích</span>
+            </div>
+          </article>
+
+          <!-- Item 4: Wagashi & Matcha -->
+          <article class="cuisine-card" data-aos="fade-up" data-aos-delay="400">
+            <figure class="cuisine-img-box">
+              <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=900&auto=format&fit=crop" alt="Bánh ngọt truyền thống Wagashi và matcha">
+            </figure>
+            <div class="cuisine-info">
+              <span class="cuisine-category">Nghệ thuật ngọt ngào</span>
+              <h3 class="cuisine-title">Bánh Ngọt Wagashi & Trà Uji</h3>
+              <p class="cuisine-desc">Được nặn thủ công tỉ mỉ tựa hoa anh đào, lá phong hay cá koi, dùng kèm ngụm trà xanh Uji đậm vị chát dịu ngọt hậu thư thái.</p>
+              <span class="taste-badge"><i class="fa-solid fa-palette"></i> Tinh hoa thẩm mỹ</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION LỊCH TRÌNH TOUR GỢI Ý (FEATURED TOUR PACKAGES) -->
+    <section class="tours-section" id="tours">
+      <div class="container">
+        <header class="section-header text-center" data-aos="fade-up">
+          <div class="section-tag">CHÙM TOUR BÁN CHẠY NHẤT 2026</div>
+          <h2 class="section-title">Lịch Trình Thiết Kế Đẳng Cấp Cùng TravelHi</h2>
+          <p class="section-description">
+            Cam kết dịch vụ chuẩn quốc tế, bay thẳng hàng không 5 sao Vietnam Airlines / All Nippon Airways, khách sạn trung tâm cao cấp.
+          </p>
+        </header>
+
+        <div class="tours-grid">
+
+          <!-- Tour 1 -->
+          <article class="tour-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="tour-header">
+              <span class="tour-promo-badge">TIẾT KIỆM 3.000.000₫</span>
+              <h3 class="tour-name">Cung Đường Vàng Hoàng Kim: Tokyo - Núi Phú Sĩ - Kyoto - Osaka</h3>
+              <div class="tour-highlights">
+                <span><i class="fa-solid fa-plane"></i> Bay Vietnam Airlines</span>
+                <span><i class="fa-solid fa-hotel"></i> Khách sạn 4-5 sao</span>
+                <span><i class="fa-solid fa-train"></i> Trải nghiệm Shinkansen</span>
+              </div>
+            </div>
+            <div class="tour-itinerary">
+              <ul class="itinerary-steps">
+                <li><strong>Ngày 1:</strong> TP.HCM / Hà Nội ✈️ Tokyo - Vịnh Odaiba lung linh</li>
+                <li><strong>Ngày 2:</strong> Tokyo - Đền Sensoji - Phố Ginza - Núi Phú Sĩ</li>
+                <li><strong>Ngày 3:</strong> Làng cổ Oshino Hakkai - Tắm Onsen khoáng nóng</li>
+                <li><strong>Ngày 4:</strong> Đi Tàu Shinkansen đến Cố Đô Kyoto - Rừng Trúc Arashiyama</li>
+                <li><strong>Ngày 5:</strong> Kyoto - Đền Fushimi Inari - Osaka - Phố Dotonbori</li>
+                <li><strong>Ngày 6:</strong> Lâu đài Osaka - Mua sắm Rinku Outlet ✈️ Về Việt Nam</li>
+              </ul>
+            </div>
+            <div class="tour-bottom">
+              <div class="tour-pricing">
+                <span class="old-price">34.990.000₫</span>
+                <span class="curr-price">31.990.000₫</span>
+                <small class="per-person">/ khách (Trọn gói tất cả dịch vụ)</small>
+              </div>
+              <button class="btn btn-primary btn-block open-modal-btn" data-tour="Tour Cung Đường Vàng Hoàng Kim 6N5Đ">
+                <i class="fa-solid fa-cart-shopping"></i> Đặt Chỗ Nhận Ưu Đãi
+              </button>
+            </div>
+          </article>
+
+          <!-- Tour 2 -->
+          <article class="tour-box tour-popular" data-aos="fade-up" data-aos-delay="200">
+            <div class="ribbon-popular">BÁN CHẠY NHẤT</div>
+            <div class="tour-header">
+              <span class="tour-promo-badge badge-sakura">MÙA HOA ANH ĐÀO SAKURA</span>
+              <h3 class="tour-name">Mùa Hoa Anh Đào Rực Rỡ: Tokyo - Yokohama - Yamanashi - Công Viên Ueno</h3>
+              <div class="tour-highlights">
+                <span><i class="fa-solid fa-plane"></i> Bay All Nippon Airways</span>
+                <span><i class="fa-solid fa-camera"></i> Điểm ngắm hoa đẹp nhất</span>
+                <span><i class="fa-solid fa-drumstick-bite"></i> Thưởng thức Bò Wagyu</span>
+              </div>
+            </div>
+            <div class="tour-itinerary">
+              <ul class="itinerary-steps">
+                <li><strong>Ngày 1:</strong> Khởi hành đến Tokyo - Ngắm hoa đêm công viên Chidorigafuchi</li>
+                <li><strong>Ngày 2:</strong> Công viên Ueno sắc hồng - Sông Meguro lãng mạn</li>
+                <li><strong>Ngày 3:</strong> Núi Phú Sĩ - Hồ Kawaguchi rợp bóng hoa Sakura</li>
+                <li><strong>Ngày 4:</strong> Thung lũng núi lửa Owakudani - Ăn trứng đen trường thọ</li>
+                <li><strong>Ngày 5:</strong> Mua sắm thỏa thích tại Shinjuku ✈️ Khởi hành về nước</li>
+              </ul>
+            </div>
+            <div class="tour-bottom">
+              <div class="tour-pricing">
+                <span class="old-price">32.500.000₫</span>
+                <span class="curr-price">28.990.000₫</span>
+                <small class="per-person">/ khách (Đã bao gồm Visa & Vé tham quan)</small>
+              </div>
+              <button class="btn btn-primary btn-block open-modal-btn" data-tour="Tour Ngắm Hoa Anh Đào Sakura 5N4Đ">
+                <i class="fa-solid fa-cart-shopping"></i> Đặt Chỗ Nhận Ưu Đãi
+              </button>
+            </div>
+          </article>
+
+          <!-- Tour 3 -->
+          <article class="tour-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="tour-header">
+              <span class="tour-promo-badge badge-hokkaido">XỨ SỞ BĂNG TUYẾT</span>
+              <h3 class="tour-name">Hokkaido Huyền Thoại: Sapporo - Kênh Đào Otaru - Asahikawa - Hakodate</h3>
+              <div class="tour-highlights">
+                <span><i class="fa-solid fa-person-skiing"></i> Trải nghiệm trượt tuyết</span>
+                <span><i class="fa-solid fa-shrimp"></i> Buffet Cua Hoàng Đế</span>
+                <span><i class="fa-solid fa-spa"></i> Tắm Onsen giữa tuyết</span>
+              </div>
+            </div>
+            <div class="tour-itinerary">
+              <ul class="itinerary-steps">
+                <li><strong>Ngày 1:</strong> Bay đến Sapporo - Thành phố tuyết thanh bình</li>
+                <li><strong>Ngày 2:</strong> Kênh đào Otaru lung linh - Bảo tàng hộp âm nhạc</li>
+                <li><strong>Ngày 3:</strong> Thảo nguyên tuyết Biei - Hồ xanh Blue Pond huyền bí</li>
+                <li><strong>Ngày 4:</strong> Vườn thú Asahiyama xem chim cánh cụt dạo tuyết</li>
+                <li><strong>Ngày 5:</strong> Cáp treo ngắm vịnh đêm Hakodate triệu đô</li>
+                <li><strong>Ngày 6:</strong> Chợ hải sản buổi sáng Hakodate ✈️ Trở về Việt Nam</li>
+              </ul>
+            </div>
+            <div class="tour-bottom">
+              <div class="tour-pricing">
+                <span class="old-price">39.000.000₫</span>
+                <span class="curr-price">35.900.000₫</span>
+                <small class="per-person">/ khách (Tặng gói trượt tuyết chuyên nghiệp)</small>
+              </div>
+              <button class="btn btn-primary btn-block open-modal-btn" data-tour="Tour Hokkaido Băng Tuyết Huyền Thoại 6N5Đ">
+                <i class="fa-solid fa-cart-shopping"></i> Đặt Chỗ Nhận Ưu Đãi
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CẨM NANG & BLOG KINH NGHIỆM DU LỊCH (TRAVEL TIPS) -->
+    <section class="tips-section" id="tips">
+      <div class="container">
+        <header class="section-header text-center" data-aos="fade-up">
+          <div class="section-tag">CẨM NANG BỎ TÚI</div>
+          <h2 class="section-title">Kinh Nghiệm Du Lịch Nhật Bản Từ Chuyên Gia TravelHi</h2>
+          <p class="section-description">
+            Những thông tin thiết thực giúp bạn chuẩn bị hành trang chu đáo nhất cho chuyến du hành đến đất nước mặt trời mọc.
+          </p>
+        </header>
+
+        <div class="tips-grid">
+
+          <article class="tip-card" data-aos="fade-up" data-aos-delay="100">
+            <figure class="tip-thumb">
+              <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=700&auto=format&fit=crop" alt="Cẩm nang xin Visa Nhật Bản">
+              <span class="tip-badge">Hồ Sơ & Thủ Tục</span>
+            </figure>
+            <div class="tip-content">
+              <time datetime="2026-03-15" class="tip-date"><i class="fa-regular fa-calendar"></i> 15/03/2026</time>
+              <h3 class="tip-title"><a href="#contact">Hướng Dẫn Thủ Tục Xin Visa Du Lịch Nhật Bản Đậu 99% Mới Nhất</a></h3>
+              <p class="tip-desc">Chi tiết các giấy tờ cần thiết, chứng minh tài chính, công việc và cách chuẩn bị hồ sơ du lịch tự túc hoặc theo đoàn nhanh chóng nhất.</p>
+              <a href="#contact" class="read-more-link">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="tip-card" data-aos="fade-up" data-aos-delay="200">
+            <figure class="tip-thumb">
+              <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=700&auto=format&fit=crop" alt="Văn hóa ứng xử tại Nhật Bản">
+              <span class="tip-badge">Văn Hóa Ứng Xử</span>
+            </figure>
+            <div class="tip-content">
+              <time datetime="2026-03-20" class="tip-date"><i class="fa-regular fa-calendar"></i> 20/03/2026</time>
+              <h3 class="tip-title"><a href="#contact">10 Quy Tắc Vàng Cần Nhớ Khi Lần Đầu Tiên Đến Nhật Bản</a></h3>
+              <p class="tip-desc">Văn hóa không tip tiền boa, quy tắc giữ yên lặng khi đi tàu điện ngầm, cách phân loại rác chuẩn xác và phép lịch sự khi ăn mì Ramen.</p>
+              <a href="#contact" class="read-more-link">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="tip-card" data-aos="fade-up" data-aos-delay="300">
+            <figure class="tip-thumb">
+              <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?q=80&w=700&auto=format&fit=crop" alt="Di chuyển bằng tàu Shinkansen và thẻ IC">
+              <span class="tip-badge">Di Chuyển & Công Nghệ</span>
+            </figure>
+            <div class="tip-content">
+              <time datetime="2026-03-28" class="tip-date"><i class="fa-regular fa-calendar"></i> 28/03/2026</time>
+              <h3 class="tip-title"><a href="#contact">Bí Quyết Mua Thẻ Suica/Pasmo, JR Pass & Kết Nối eSIM Nhật Bản</a></h3>
+              <p class="tip-desc">Tất tần tật kinh nghiệm di chuyển liên tỉnh bằng tàu Shinkansen giá rẻ và cách cài đặt internet 5G không giới hạn dung lượng.</p>
+              <a href="#contact" class="read-more-link">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION ĐÁNH GIÁ CỦA KHÁCH HÀNG (TESTIMONIALS) -->
+    <section class="testimonials-section">
+      <div class="container">
+        <header class="section-header text-center" data-aos="fade-up">
+          <div class="section-tag">ĐÁNH GIÁ CHÂN THỰC</div>
+          <h2 class="section-title">Khách Hàng Nói Gì Về TravelHi?</h2>
+          <p class="section-description">Hơn 25.000+ du khách đã lựa chọn TravelHi để hiện thực hóa giấc mơ Nhật Bản.</p>
+        </header>
+
+        <div class="testimonials-grid">
+
+          <article class="testi-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">
+              "Gia đình mình vừa hoàn thành tour Cung Đường Vàng cùng TravelHi. Khách sạn nhìn thẳng ra núi Phú Sĩ siêu đẹp, hướng dẫn viên nhiệt tình, chu đáo từng bữa ăn của bố mẹ mình. Chắc chắn sẽ quay lại vào mùa thu!"
+            </p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" alt="Chị Nguyễn Hoàng Mai" class="author-avatar">
+              <div>
+                <strong>Chị Nguyễn Hoàng Mai</strong>
+                <small>Hà Nội • Tour Mùa Xuân 2026</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">
+              "Thủ tục visa ban đầu mình rất lo vì hồ sơ tự do, nhưng đội ngũ TravelHi tư vấn cực kỳ chuyên nghiệp, chỉ 6 ngày là có visa dán. Tour Hokkaido mùa đông trượt tuyết và ăn cua hoàng đế không thể chê vào đâu được."
+            </p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Anh Lê Minh Vũ" class="author-avatar">
+              <div>
+                <strong>Anh Lê Minh Vũ</strong>
+                <small>TP. Hồ Chí Minh • Tour Hokkaido Băng Tuyết</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">
+              "Cảm ơn TravelHi đã cho hai vợ chồng mình tuần trăng mật đáng nhớ tại Kyoto và Tokyo. Được mặc Kimono chụp hình đền Fushimi Inari và thưởng thức thịt bò Kobe nướng thật sự là trải nghiệm nhớ mãi cả đời!"
+            </p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop" alt="Bạn Trần Thùy Linh" class="author-avatar">
+              <div>
+                <strong>Bạn Trần Thùy Linh</strong>
+                <small>Đà Nẵng • Tour Cố Đô Kyoto</small>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION LIÊN HỆ & FORM ĐĂNG KÝ TƯ VẤN (CONTACT & BOOKING CTA) -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper" data-aos="fade-up">
+
+          <!-- Cột thông tin liên hệ (Semantic aside) -->
+          <aside class="contact-info-panel">
+            <div class="panel-badge">TRAVELHI VIỆT NAM</div>
+            <h2 class="panel-title">Sẵn Sàng Cho Chuyến Du Ngoạn Nhật Bản Của Bạn?</h2>
+            <p class="panel-desc">
+              Để lại thông tin, đội ngũ chuyên viên của TravelHi sẽ liên hệ tư vấn miễn phí hành trình phù hợp nhất và gửi tặng <strong>Bộ cẩm nang du lịch Nhật Bản 2026 (PDF)</strong> hoàn toàn miễn phí.
+            </p>
+
+            <address class="contact-details">
+              <div class="contact-item">
+                <i class="fa-solid fa-map-pin"></i>
+                <div>
+                  <strong>Trụ sở chính:</strong>
+                  <span>Số 10 Huỳnh Văn Nghệ, P. Bửu Long, TP. Biên Hòa, Tỉnh Đồng Nai (Đại học Lạc Hồng)</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-phone-volume"></i>
+                <div>
+                  <strong>Tổng đài tư vấn:</strong>
+                  <span><a href="tel:19008888">1900 8888</a> - <a href="tel:0912345678">0912 345 678</a> (Miễn cước)</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <div>
+                  <strong>Email hỗ trợ:</strong>
+                  <span><a href="mailto:contact@travelhi.vn">contact@travelhi.vn</a> / <a href="mailto:tour@travelhi.vn">tour@travelhi.vn</a></span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-business-time"></i>
+                <div>
+                  <strong>Thời gian làm việc:</strong>
+                  <span>Thứ 2 - Chủ Nhật: 08:00 - 21:00 (Kể cả ngày lễ)</span>
+                </div>
+              </div>
+            </address>
+
+            <div class="social-connect">
+              <span>Theo dõi chúng tôi:</span>
+              <div class="social-icons-row">
+                <a href="#" class="social-pill" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-pill" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-pill" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="social-pill" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Cột Form đăng ký tư vấn -->
+          <div class="contact-form-panel">
+            <h3 class="form-panel-title">Đăng Ký Tư Vấn & Nhận Báo Giá Ưu Đãi</h3>
+            <p class="form-panel-sub">Nhận ưu đãi giảm ngay <strong>1.500.000₫/khách</strong> khi đăng ký nhóm từ 2 người trong tuần này.</p>
+
+            <form class="booking-consult-form" id="consultForm" onsubmit="event.preventDefault(); handleConsultSubmit(this);">
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="fullName">Họ và tên du khách <span class="required">*</span></label>
+                  <input type="text" id="fullName" class="form-input" placeholder="Nguyễn Văn A" required>
+                </div>
+                <div class="form-field">
+                  <label for="phoneNumber">Số điện thoại / Zalo <span class="required">*</span></label>
+                  <input type="tel" id="phoneNumber" class="form-input" placeholder="0912 345 678" pattern="[0-9]{10,11}" required>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="emailAddr">Địa chỉ Email <span class="required">*</span></label>
+                  <input type="email" id="emailAddr" class="form-input" placeholder="example@email.com" required>
+                </div>
+                <div class="form-field">
+                  <label for="preferredDest">Điểm đến quan tâm</label>
+                  <select id="preferredDest" class="form-input">
+                    <option value="Cung Đường Vàng (Tokyo - Phú Sĩ - Kyoto - Osaka)">Cung Đường Vàng (Tokyo - Phú Sĩ - Kyoto - Osaka)</option>
+                    <option value="Ngắm Hoa Anh Đào Tokyo - Sakura Season">Ngắm Hoa Anh Đào Tokyo - Sakura Season</option>
+                    <option value="Hokkaido Băng Tuyết & Otaru Lãng Mạn">Hokkaido Băng Tuyết & Otaru Lãng Mạn</option>
+                    <option value="Cố Đô Kyoto - Nara - Di Sản Ngàn Năm">Cố Đô Kyoto - Nara - Di Sản Ngàn Năm</option>
+                    <option value="Tour Thiết Kế Riêng Theo Yêu Cầu (Custom)">Tour Thiết Kế Riêng Theo Yêu Cầu (Custom)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="travelDate">Dự kiến khởi hành</label>
+                  <input type="date" id="travelDate" class="form-input">
+                </div>
+                <div class="form-field">
+                  <label for="guestCount">Số lượng du khách</label>
+                  <select id="guestCount" class="form-input">
+                    <option value="1">1 người</option>
+                    <option value="2" selected>2 người (Cặp đôi / Bạn bè)</option>
+                    <option value="3-5">Gia đình nhỏ (3 - 5 người)</option>
+                    <option value="6+">Đoàn thể / Doanh nghiệp (> 6 người)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="specialNote">Yêu cầu đặc biệt (nếu có)</label>
+                <textarea id="specialNote" rows="3" class="form-input" placeholder="Ví dụ: Cần hỗ trợ làm visa cho người cao tuổi, muốn ăn chay, phòng gia đình,..."></textarea>
+              </div>
+
+              <div class="form-check-group">
+                <input type="checkbox" id="giftPdf" checked>
+                <label for="giftPdf">Gửi tặng tôi <em>"Cẩm nang du lịch Nhật Bản 2026 - Bí kíp trọn bộ 100 trang"</em> qua email.</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit-form">
+                <i class="fa-solid fa-paper-plane"></i> Gửi Yêu Cầu Tư Vấn Ngay
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER CHUẨN SEMANTIC HTML5 ================= -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+
+        <!-- Cột 1: Thông tin thương hiệu -->
+        <div class="footer-col brand-info">
+          <a href="#hero" class="footer-logo">
+            <img src="assets/images/logo.svg" alt="TravelHi Logo" class="footer-logo-img">
+          </a>
+          <p class="footer-bio">
+            <strong>TravelHi</strong> - Thương hiệu lữ hành tiên phong chuyên biệt các tour du lịch khám phá Nhật Bản. Đem đến những kỳ nghỉ trọn vẹn, giàu cảm xúc và đậm chất văn hóa Phù Tang.
+          </p>
+          <div class="certifications">
+            <span class="cert-pill"><i class="fa-solid fa-certificate"></i> Giấy phép Lữ hành Quốc tế số 79-999/TCDL-GP</span>
+          </div>
+        </div>
+
+        <!-- Cột 2: Cung đường du lịch -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Điểm Đến Hấp Dẫn</h4>
+          <ul class="footer-links">
+            <li><a href="#destinations"><i class="fa-solid fa-chevron-right"></i> Tokyo Hiện Đại & Mua Sắm</a></li>
+            <li><a href="#destinations"><i class="fa-solid fa-chevron-right"></i> Cố Đô Kyoto & Rừng Trúc</a></li>
+            <li><a href="#destinations"><i class="fa-solid fa-chevron-right"></i> Osaka - Ẩm Thực Đường Phố</a></li>
+            <li><a href="#destinations"><i class="fa-solid fa-chevron-right"></i> Núi Phú Sĩ & Hồ Kawaguchi</a></li>
+            <li><a href="#destinations"><i class="fa-solid fa-chevron-right"></i> Hokkaido Tuyết Trắng Lãng Mạn</a></li>
+            <li><a href="#destinations"><i class="fa-solid fa-chevron-right"></i> Nara - Công Viên Hươu Sika</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3: Trải nghiệm & Cẩm nang -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Trải Nghiệm Văn Hóa</h4>
+          <ul class="footer-links">
+            <li><a href="#experiences"><i class="fa-solid fa-chevron-right"></i> Nghệ Thuật Trà Đạo Chado</a></li>
+            <li><a href="#experiences"><i class="fa-solid fa-chevron-right"></i> Tắm Suối Nước Nóng Onsen</a></li>
+            <li><a href="#experiences"><i class="fa-solid fa-chevron-right"></i> Trải Nghiệm Kimono Cổ Truyền</a></li>
+            <li><a href="#cuisine"><i class="fa-solid fa-chevron-right"></i> Thưởng Thức Bò Wagyu A5</a></li>
+            <li><a href="#tips"><i class="fa-solid fa-chevron-right"></i> Thủ Tục Xin Visa Nhật Bản</a></li>
+            <li><a href="#tips"><i class="fa-solid fa-chevron-right"></i> Bản Đồ Mua Sắm Miễn Thuế</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 4: Đăng ký nhận tin & Bản tin -->
+        <div class="footer-col newsletter-col">
+          <h4 class="footer-col-title">Bản Tin Khuyến Mãi</h4>
+          <p class="footer-subtext">Đăng ký để nhận voucher giảm giá đến <strong>2.000.000₫</strong> và lịch khởi hành tour mới nhất.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); handleNewsletterSubmit(this);">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Nhập địa chỉ email..." required class="newsletter-input">
+              <button type="submit" class="btn btn-primary btn-newsletter" aria-label="Đăng ký nhận tin">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+          <div class="payment-methods">
+            <span>Đối tác thanh toán an toàn:</span>
+            <div class="payment-icons">
+              <i class="fa-brands fa-cc-visa" title="Visa"></i>
+              <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+              <i class="fa-brands fa-cc-jcb" title="JCB Nhật Bản"></i>
+              <i class="fa-solid fa-building-columns" title="Chuyển khoản ngân hàng"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Dòng bản quyền và thông tin đồ án kiểm tra giữa kỳ -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text">
+          © 2026 <strong>TravelHi - Japan Discovery</strong>. Bản quyền thuộc về đồ án môn Thiết Kế Web.
+        </p>
+        <p class="student-info-tag">
+          <strong>Trường Đại học Lạc Hồng</strong> • Khoa Công nghệ Thông tin • Sinh viên: <strong>Trần Lê Minh Huy</strong> (MSSV: <strong>123001137</strong>)
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL ĐẶT TOUR NHANH ================= -->
+  <div class="modal-backdrop" id="bookingModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">🇯🇵 TRAVELHI BOOKING</span>
+          <h3 class="modal-title" id="modalTourTitle">Đăng Ký Đặt Chuyến Đi</h3>
+        </div>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Đóng popup">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="modal-form" id="quickBookingForm" onsubmit="event.preventDefault(); handleModalBookingSubmit(this);">
+          <input type="hidden" id="modalSelectedTour" name="selectedTour" value="">
+          <div class="form-field">
+            <label for="modalName">Họ và tên của bạn <span class="required">*</span></label>
+            <input type="text" id="modalName" class="form-input" placeholder="Nguyễn Văn A" required>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="modalPhone">Số điện thoại / Zalo <span class="required">*</span></label>
+              <input type="tel" id="modalPhone" class="form-input" placeholder="0912 345 678" pattern="[0-9]{10,11}" required>
+            </div>
+            <div class="form-field">
+              <label for="modalEmail">Email nhận vé <span class="required">*</span></label>
+              <input type="email" id="modalEmail" class="form-input" placeholder="example@email.com" required>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="modalGuests">Số lượng khách</label>
+              <select id="modalGuests" class="form-input">
+                <option value="1">1 người</option>
+                <option value="2" selected>2 người</option>
+                <option value="3-4">3 - 4 người</option>
+                <option value="5+">5+ người</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="modalDate">Ngày dự kiến</label>
+              <input type="date" id="modalDate" class="form-input">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="modalMsg">Ghi chú bổ sung</label>
+            <textarea id="modalMsg" rows="2" class="form-input" placeholder="Yêu cầu phòng đơn, suất ăn, người già/trẻ em,..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">
+            <i class="fa-solid fa-circle-check"></i> Xác Nhận Giữ Chỗ Miễn Phí
+          </button>
+          <small class="secure-note"><i class="fa-solid fa-lock"></i> TravelHi cam kết bảo mật thông tin khách hàng tuyệt đối.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TOAST NOTIFICATION ================= -->
+  <div class="toast-notification" id="toastNotice" role="alert" aria-live="assertive">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-text">
+      <strong id="toastTitle">Thành Công!</strong>
+      <span id="toastMsg">Yêu cầu của bạn đã được gửi thành công.</span>
+    </div>
+  </div>
+
+  <!-- ================= FLOATING ACTION & BACK TO TOP ================= -->
+  <div class="floating-widget-group">
+    <a href="https://zalo.me" target="_blank" rel="noopener noreferrer" class="float-btn float-zalo" title="Chat Zalo với tư vấn viên">
+      <span class="zalo-label">Zalo</span>
+    </a>
+    <a href="tel:19008888" class="float-btn float-hotline" title="Gọi hotline 1900 8888">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <button class="float-btn float-top" id="backToTopBtn" aria-label="Cuộn lên đầu trang" title="Về đầu trang">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- Thư viện JavaScript AOS (Animate On Scroll) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Script xử lý tương tác của Website -->
+  <script src="script.js"></script>
+</body>
+</html>
