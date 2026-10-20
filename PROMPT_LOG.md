@@ -101,6 +101,32 @@
 
 ---
 
+### Lần 6: Nâng cấp thẩm mỹ Typography & Hệ thống bảng màu Nhật Bản (Luxury Japanese Aesthetics)
+
+- **Prompt đã dùng:**
+  > *"Hãy chỉnh lại font chữ và màu sắc trông đẹp mắt nhất có thể, chỉ cần đọc file style.css không cần đọc những file khác."*
+
+- **Kết quả AI tạo ra:**
+  - Nâng cấp bảng màu thương hiệu sang trọng: Imperial Crimson (`#c1121f`), Sakura Rose (`#fbc3bc`), Washi Paper Cream (`#faf7f2`), Velvet Obsidian (`#0f172a`), và Imperial Gold (`#c59b27`).
+  - Thiết lập font chữ tiêu đề nghệ thuật thư pháp `'Noto Serif JP'` & `'Playfair Display'`, kết hợp font chữ nội dung `'Plus Jakarta Sans'` & `'Noto Sans JP'` tối ưu độ sắc nét và tương phản thị giác chuẩn WCAG.
+
+---
+
+### Lần 7: Tinh chỉnh kích thước chữ thanh công cụ & Mở rộng khung 3D to ngang toàn màn hình
+
+- **Prompt đã dùng:**
+  > *"Kích thước chữ trên thanh công cụ, hãy chỉnh nhỏ lại và khung 3D này hãy làm nó to ngang màn hình chứ không nằm trong khung viền nhỏ, như vậy không cân đối."*
+
+- **Thách thức gặp phải:**
+  - Do có nhiều mục điều hướng (8 liên kết) kèm Hotline và nút CTA, kích thước chữ ban đầu (0.92rem) và khoảng đệm (padding) lớn khiến chữ bị bẻ xuống 2–3 dòng (ví dụ: "Trang\nChủ", "Trải\nNghiệm\n3D").
+  - Khung 3D nằm gọn trong thẻ giới hạn `.container` (1240px) với các đường viền bo góc nhỏ tạo cảm giác tù túng, mất cân đối với cảnh quan thiên nhiên Kyoto hùng vĩ.
+
+- **Cách giải quyết:**
+  - **Thanh công cụ (Navbar):** Giảm chiều cao header xuống `74px`, giảm font chữ các nút menu xuống `0.82rem`, icon xuống `0.78rem`, khoảng đệm `6px 10px`, áp dụng `white-space: nowrap;` triệt để ngăn chặn tình trạng ngắt dòng chữ, mở rộng `.header-container` lên `1420px` và bổ sung breakpoint `1280px` tinh chỉnh tỉ lệ mượt mà.
+  - **Khung 3D toàn màn hình (Full-width Edge-to-Edge):** Tách `.kage-frame-container` ra ngoài khối `.container` vào wrapper toàn màn hình `width: 100%`, loại bỏ viền bo góc nhỏ (`border-radius: 0`), tăng chiều cao lên `85vh` (min 680px), chỉ giữ lại hai đường viền trên/dưới hòa quyện vào màu đen huyền bí của ngôi chùa cổ, giúp không gian 3D trải rộng to ngang toàn màn hình hoành tráng và cân đối.
+
+---
+
 ## 3. Đánh giá cá nhân về quá trình Vibe Coding
 
 ### 1. AI đã giúp bạn tiết kiệm thời gian ở phần nào nhất?
