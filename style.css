@@ -5,7 +5,6 @@
    Kiến trúc: Pure HTML5 & CSS (Không sử dụng file JavaScript riêng biệt)
    Tích hợp: ThreeUI Kage 3D Temple Experience (WebGL / Three.js)
    ========================================================================== */
-
 /* --------------------------------------------------------------------------
    1. CSS VARIABLES (QUẢN LÝ PHỐI MÀU, TYPOGRAPHY, SPACING NHẤT QUÁN TOÀN TRANG)
    -------------------------------------------------------------------------- */
@@ -16,8 +15,7 @@
   --primary-light: #e63946;        /* Đỏ tươi rực rỡ */
   --primary-gradient: linear-gradient(135deg, #e63946 0%, #bc002d 100%);
   --primary-glow: rgba(188, 0, 45, 0.28);
-
-  /* Tông màu hoa anh đào (Sakura) & vàng kim loại */
+/* Tông màu hoa anh đào (Sakura) & vàng kim loại */
   --sakura-pink: #fbc3bc;
   --sakura-subtle: #fff1f2;
   --sakura-border: #fed7d7;

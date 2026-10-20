@@ -12,8 +12,7 @@
 - **Link GitHub Repository:** [https://github.com/minhhuy123001137/Huy_TranLeMinh_123001137](https://github.com/minhhuy123001137/Huy_TranLeMinh_123001137)
 - **Link Live Preview (GitHub Pages):** [https://minhhuy123001137.github.io/Huy_TranLeMinh_123001137/](https://minhhuy123001137.github.io/Huy_TranLeMinh_123001137/)
 - **Link Không Gian 3D Kage Kyoto Trực Tiếp:** [https://minhhuy123001137.github.io/Huy_TranLeMinh_123001137/public/landing-pages/kage.html](https://minhhuy123001137.github.io/Huy_TranLeMinh_123001137/public/landing-pages/kage.html)
-
----
+--
 
 ## 🌸 Giới Thiệu Đề Tài "TravelHi" & Hiệu Ứng 3D Kage
 **TravelHi** là trang web quảng bá du lịch chuyên sâu về đất nước Nhật Bản (Xứ sở hoa anh đào - Đất nước mặt trời mọc). Website giới thiệu trọn vẹn cảnh sắc bốn mùa, các điểm đến biểu tượng (Tokyo, Kyoto, Osaka, Phú Sĩ, Hokkaido, Nara), văn hóa truyền thống (Trà đạo Chado, Suối khoáng nóng Onsen, Áo Kimono, Tàu Shinkansen) và nền ẩm thực Washoku đạt chuẩn UNESCO.

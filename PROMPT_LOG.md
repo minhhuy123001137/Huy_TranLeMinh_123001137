@@ -9,9 +9,7 @@
 - **Đường dẫn Không Gian 3D Kage Kyoto:** `https://minhhuy123001137.github.io/Huy_TranLeMinh_123001137/public/landing-pages/kage.html`
 
 ---
-
 ## 1. Yêu cầu ban đầu (System / Initial Prompt)
-
 > **Prompt tổng quan ban đầu dùng để khởi tạo khung website:**
 > 
 > *"Bạn là một kĩ sư thiết kế web chuyên nghiệp. Hãy cùng tôi xây dựng một website quảng bá du lịch Nhật Bản hiện đại, đẳng cấp mang tên **TravelHi** (chủ đề: Khám phá vẻ đẹp bốn mùa hoa anh đào, núi Phú Sĩ, Tokyo, Kyoto, văn hóa truyền thống, ẩm thực Washoku và không gian 3D WebGL tương tác)."*
