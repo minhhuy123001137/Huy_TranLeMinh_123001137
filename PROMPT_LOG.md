@@ -1,5 +1,4 @@
 # NHẬT KÝ PROMPT ENGINEERING (VIBE CODING LOG)
-
 - **Họ và tên:** Trần Lê Minh Huy
 - **MSSV:** 123001137
 - **Tên đề tài Website:** TravelHi - Cổng Khám Phá & Trải Nghiệm Du Lịch Nhật Bản 2026 (Japan Travel & 3D Interactive Kage World)
@@ -7,7 +6,6 @@
 - **Đường dẫn GitHub Repository:** `https://github.com/minhhuy123001137/Huy_TranLeMinh_123001137`
 - **Đường dẫn GitHub Pages Live Preview:** `https://minhhuy123001137.github.io/Huy_TranLeMinh_123001137/`
 - **Đường dẫn Không Gian 3D Kage Kyoto:** `https://minhhuy123001137.github.io/Huy_TranLeMinh_123001137/public/landing-pages/kage.html`
-
 ---
 ## 1. Yêu cầu ban đầu (System / Initial Prompt)
 > **Prompt tổng quan ban đầu dùng để khởi tạo khung website:**

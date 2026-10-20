@@ -106,9 +106,7 @@ Huy_TranLeMinh_123001137/
             ├── generated/      # 4 webp preview scenes
             └── foreground/     # 10 webp foreground elements (pine tree, sakura, lantern...)
 ```
-
 ---
-
 ## 🚀 Hướng Dẫn Xem Trực Tiếp Trên GitHub Pages
 
 1. Truy cập vào trang web TravelHi:  
